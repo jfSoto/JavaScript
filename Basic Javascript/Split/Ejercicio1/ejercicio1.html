@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<script>
+			var fechaNacimiento = prompt("Escriba su fecha de nacimiento: ");
+			fechaNacimiento = fechaNacimiento.split("/");
+			var diaNumero = parseInt(fechaNacimiento[0]);
+			var mesNumero = parseInt(fechaNacimiento[1]);
+			var anoNumero = parseInt(fechaNacimiento[2]);
+
+			if( (diaNumero<32) && ((mesNumero>0) && (mesNumero<13)) && (fechaNacimiento[2].length == 4) )
+			{
+				var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+				var mesFecha = fechaNacimiento[1] - 1;
+				var fechaJSON = { dia:diaNumero , mes:meses[mesFecha], ano:fechaNacimiento[2] }
+				console.log(fechaJSON);
+			}
+			else
+			{
+				alert("La fecha introducida esta mal")
+			}
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
