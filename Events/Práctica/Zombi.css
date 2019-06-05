@@ -1,0 +1,34 @@
+header {
+	background-color: grey;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+ 
+.nav {
+	overflow: hidden;
+}
+ 
+.armas {
+	background-color: white;
+	text-align: center;
+	color: grey;
+	margin: 0 auto;
+	width: 20%;
+	float:left;
+}
+ 
+.zombie {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+ 
+.zombie img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	align: center;
+	height: 50vh;
+}
