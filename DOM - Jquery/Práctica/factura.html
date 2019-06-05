@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Práctica Tema 4 DWEC</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="practica.js"></script>
+    </head>
+    <body>
+        <div style="font-weight: bold; padding:5rem; position:fixed;" class="bg-primary text-white form-group">
+            <label for="concepto">Concepto:</label>
+            <input type="text" style="max-width: 18rem;" class="form-control" id="concepto">
+            <label for="cantidad">Cantidad:</label>
+            <input type="text" style="max-width: 18rem;" class="form-control" id="cantidad">
+            <label for="precioUnitario">Precio Unitario:</label>
+            <input type="text" style="max-width: 18rem;" class="form-control" id="precioUnitario"><br/>
+            <button class="btn btn-secondary" id="boton">Aceptar</button>
+        </div>
+        <br/>
+        <img style="float:left; margin-left:25rem;" src="Captura.png" alt="no se ve" /><br/>
+        <div class="text-primary" style="float:right; margin-right: 5rem;">
+            <p style="padding:5px; font-weight:bold;" class="bg-primary text-white">Número de Factura: 2017-0002</p>
+            <p style="padding:5px; font-weight:bold;" class="bg-primary text-white" id="fechaHoy"></p>
+            <h2 style="font-weight:bold;"><u>Cliente: </u></h2>
+            <p>VicVal Sí</p>
+            <p>CIF/NIF: B30142516</p>
+            <p>C/Mala. nº1</p>
+            <p>18190 Granada</p>
+            <p>Granada, España</p>
+        </div>
+        <div class="text-primary" style="float:left; margin-left:27rem;"><br/>
+            <p>Fulanito de tal y cual</p>
+            <p>CIF/NIF: 15402650f</p>
+            <p>Calle Paraíso, nº1</p>
+            <p>CP: 14700 Córdoba</p>
+            <p>Córdoba España</p>
+        </div>
+        <table style="max-width: 60rem; margin-left:25rem; margin-top:5rem;" class="table table-bordered table-hover text-center">
+            <tr class="bg-primary text-white">
+                <th>Concepto</th>
+                <th>Cantidad Base</th>
+                <th>Imponible</th>
+                <th>I.V.A.</th>
+            </tr>
+        </table>
+        <div class="float-right card text-white bg-primary mb-3" style="margin-right:35rem; max-width: 18rem; font-size: 20px;">
+            <div class="card-body">
+                <p>Total Base Imponible: <span id="totalBaseImponible">0</span> €</p>
+                <p>I.V.A. 21 %: <span id="totalIva">0</span> €</p>
+                <p>Retención 15%: <span id="retencion">0</span> €</p>
+                <p>TOTAL: <span id="total">0</span> €</p>
+            </div>
+        </div>
+    </body>
+</html>
