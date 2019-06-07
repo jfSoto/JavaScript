@@ -1,0 +1,60 @@
+<!-- 
+    La empresa Entretenimientos GrupoStudium, S.L. nos ha pedido implementar el
+    prototipo de un juego muy simple en JavaScript. Nos proporcionan el código
+    HTML y CSS, y tenemos que implementar las reglas siguientes:
+
+        - El jugador tiene 3 segundos para hacer click sobre el círculo de color rojo, 
+          que será seleccionado aleatoriamente.
+
+        - Una vez se ha agotado el tiempo, el círculo se intercambia con otro.
+
+        - Si se hace click en el círculo dentro del tiempo indicado, muestra una alerta 
+          con el mensaje: “Has ganado”. 
+-->
+
+<style>
+    div>div 
+    {
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+      display: inline-block;
+      border-radius: 50px;
+    }
+   
+    .objetivo 
+    {
+      background-color: red;
+    }
+</style>
+   
+<div>
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+</div>
+   
+<div>
+    <div id="4"></div>
+    <div id="5"></div>
+    <div id="6"></div>
+</div>
+   
+<div>
+    <div id="7"></div>
+    <div id="8"></div>
+    <div id="9"></div>
+</div>
+
+<!-- 
+    Para obtener un nodo podemos usar el método document.getElementById pasando 
+    como argumento el id del elemento, y para modificar la clase sólo hay que 
+    asignar el nuevo valor a la propiedad className del nodo.
+
+    Nota: Para acceder a las clases que dan estilo a un elemento de HTML se 
+    utiliza la propiedad className del elemento. Esta propiedad contiene una 
+    cadena de texto que puede ser modificada para reemplazar las clases, añadir 
+    otras nuevas o eliminarlas. Así pues, para cambiar el color del círculo en el 
+    que se debe hacer click, sólo hay que reemplazar el className del elemento 
+    por objetivo o por una cadena vacía, según si se quiere resaltar o limpiar. 
+-->
