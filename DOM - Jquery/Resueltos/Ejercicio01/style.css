@@ -1,0 +1,21 @@
+.rojo 
+{
+    background-color: red
+}
+
+.verde 
+{
+    background-color: green
+}
+
+.amarillo 
+{
+    background-color: yellow
+}
+
+.semaforo 
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
