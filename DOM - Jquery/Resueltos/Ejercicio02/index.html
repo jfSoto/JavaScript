@@ -1,0 +1,105 @@
+<!-- 
+    Enunciado
+
+    Sobre el siguiente código, realizar las siguientes modificaciones 
+    usando únicamente JavaScript puro, sin CSS. Repetir los ejercicios 
+    usando exclusivamente jQuery.
+
+    Tabla
+
+        - Las celdas de la tabla están separadas por líneas grises únicas, 
+          con un padding de 10px.
+
+        - El color de fondo de la fila de encabezado es darkkhaki.
+
+        - El color de fondo de las filas pares es lemonchiffon.
+
+        - Al hacer pasar el ratón por todas las filas excepto por la de encabezado, 
+          el color de fondo pasa a khaki.
+
+    Búsqueda
+
+        - Realizar un filtrado a partir del texto escrito en el cuadro de búsqueda. 
+          Es decir, al escribir en el input, sólo muestra las filas que contienen 
+          el texto que contiene.
+
+        - Al pulsar en el botón "Cambiar", realiza la búsqueda por apellidos. 
+          El label cambia a Buscar por apellido: .
+
+    Añadir filas
+
+        - Insertar una nueva fila cuando se pulse el botón añadir. Al pulsar 
+          al botón se pedirán los datos necesarios al usuario. 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1 class="cabecera">GrupoStudium</h1>
+        <h2 class="cabecera">Presentación</h2>
+        <div id="separador"></div>
+        <section id="alumnos">
+            <h2 class="cabecera">Alumnos</h2>
+            <p><label>Buscar por nombre: </label><input type="text"></p>
+            <p><button>Cambiar</button></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ana</td>
+                        <td>Alemán</td>
+                        <td>9.8</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Benito</td>
+                        <td>Bueno</td>
+                        <td>7.2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Carmen</td>
+                        <td>Cano</td>
+                        <td>8.9</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Diego</td>
+                        <td>Duro</td>
+                        <td>6.1</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Elisa</td>
+                        <td>Escalera</td>
+                        <td>5.5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Javier</td>
+                        <td>Escudero</td>
+                        <td>9.8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <button id="addButton">Añadir</button>
+    </body>
+</html>
